@@ -38,24 +38,26 @@ body {
     margin: 0;
   }
   
-  .task-item {
+  .delete-icon {
+    color: red;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.task-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     border-bottom: 1px solid #eee;
-    font-size: 1rem;
-  }
-  
-  .task-item:hover {
-    background: #f9f9f9;
-  }
-  
-  .delete-icon {
-    color: red;
-    cursor: pointer;
-    display: none;
-  }
+}
+
+.task-item:hover .delete-icon {
+    display: inline-block;
+}
+
   
   .no-tasks {
     padding: 20px;
@@ -67,5 +69,20 @@ body {
     padding: 10px;
     color: #aaa;
     font-size: 0.9rem;
+  }
+  
+  .delete-all-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .delete-all-btn:hover {
+    background-color: darkred;
   }
   
